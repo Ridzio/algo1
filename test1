@@ -1,0 +1,20 @@
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import os
+from telegram import Bot
+from datetime import datetime
+import logging
+
+
+# Настройки для запуска Chrome
+options = webdriver.ChromeOptions()
+options.add_experimental_option("excludeSwitches", ["enable-logging"])
+options.binary_location = r"C:\Users\ridzi\Downloads\chrome-win64\chrome.exe"  # Убедитесь, что путь корректен
+
+
+print("Запуск браузера...")
+driver = webdriver.Chrome(options=options)
+print("Браузер запущен.")
