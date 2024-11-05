@@ -35,8 +35,8 @@ except Exception as e:
 wait = WebDriverWait(driver, 10)
 
 # Настройки Telegram
-TELEGRAM_TOKEN = '7354839056:AAHN5_2L-vPgMPOke4gvLSDRr5_rqtXpom8'
-CHAT_ID = '5409056750'
+TELEGRAM_TOKEN = 'user_token'
+CHAT_ID = 'user_ID'
 
 # Функция для отправки сообщения и фото в Telegram
 def send_message_with_photo(bot, chat_id, message, photo_path):
